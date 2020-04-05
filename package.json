@@ -1,0 +1,28 @@
+{
+  "name": "react-native-notification-permissions-android",
+  "title": "React Native Notification Permissions Android",
+  "version": "1.0.0",
+  "description": "Use to check is notification enable or disable and open notification settings only for android",
+  "homepage": "https://github.com/nntriet/react-native-notification-permissions-android",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nntriet/react-native-notification-permissions-android.git",
+    "baseUrl": "https://github.com/nntriet/react-native-notification-permissions-android"
+  },
+  "keywords": [
+    "react-native",
+    "notification",
+    "settings",
+    "android"
+  ],
+  "author": {
+    "name": "NNT",
+    "email": "nntriet@gmail.com"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react-native": ">=0.60.0-rc.0 <1.0.x"
+  }
+}
