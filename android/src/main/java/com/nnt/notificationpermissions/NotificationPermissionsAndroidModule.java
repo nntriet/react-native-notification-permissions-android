@@ -4,6 +4,8 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Promise;
+import com.facebook.react.bridge.WritableArray;
+import com.facebook.react.bridge.WritableMap;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -51,8 +53,8 @@ public class NotificationPermissionsAndroidModule extends ReactContextBaseJavaMo
     @ReactMethod
     public void isEnabled(final Promise promise) {
         try {
-            Boolean areEnabled = NotificationManagerCompat.from(getReactApplicationContext()).areNotificationsEnabled();
-            promise.resolve(areEnabled);
+            Boolean isEnabled = NotificationManagerCompat.from(getReactApplicationContext()).areNotificationsEnabled();
+            promise.resolve(isEnabled);
         } catch (Exception e) {
             promise.reject(e);
         }
