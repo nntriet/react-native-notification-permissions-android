@@ -42,7 +42,7 @@ try {
 ```
 try {
   const channels = await NotificationPermissionsAndroid.getNotificationChannels();
-  console.log(channels);
+  console.log(channels); // []
   // {
   //   id: string;
   //   isEnabled: boolean;
@@ -51,7 +51,7 @@ try {
   //   shownInNotificationCenter: boolean;
   //   shownInLockScreen: boolean;
   //   shownAsHeadsupDisplay: boolean;
-  // }
+  // } []
 } catch (error) {
   console.log(error);
 }
