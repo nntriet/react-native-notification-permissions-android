@@ -1,5 +1,5 @@
 declare module 'react-native-notification-permissions-android' {
-  interface NotificationSettings {
+  export interface NotificationSettings {
     isEnabled: boolean;
     isBadgeEnabled: boolean;
     isSoundEnabled: boolean;
@@ -8,11 +8,11 @@ declare module 'react-native-notification-permissions-android' {
     shownAsHeadsupDisplay: boolean;
   }
 
-  interface NotificationChannel extends NotificationSettings {
+  export interface NotificationChannel extends NotificationSettings {
     id: string;
   }
 
-  export const NotificationPermissionsAndroid: {
+  const NotificationPermissionsAndroid: {
     openSettings: () => void,
     isEnabled: () => Promise<boolean>,
     getGlobalNotificationSettings: () => Promise<NotificationSettings>,

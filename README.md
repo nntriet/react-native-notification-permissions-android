@@ -38,12 +38,20 @@ try {
 }
 ```
 
-### Get notification channels (channelId)
+### Get notification channels
 ```
 try {
   const channels = await NotificationPermissionsAndroid.getNotificationChannels();
   console.log(channels);
-  // string[]
+  // {
+  //   id: string;
+  //   isEnabled: boolean;
+  //   isBadgeEnabled: boolean;
+  //   isSoundEnabled: boolean;
+  //   shownInNotificationCenter: boolean;
+  //   shownInLockScreen: boolean;
+  //   shownAsHeadsupDisplay: boolean;
+  // }
 } catch (error) {
   console.log(error);
 }
